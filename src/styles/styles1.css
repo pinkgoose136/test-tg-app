@@ -1,0 +1,381 @@
+/* Общие стили для выравнивания */
+.test-form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #444;
+}
+
+.input-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+textarea, .inp {
+    width: calc(100% - 40px); /* Отступы слева и справа */
+    padding: 12px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: inherit;
+}
+
+textarea {
+    resize: none;
+    overflow: hidden;
+}
+
+
+.type-switch {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+
+.type-switch button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid #007bff;
+    background-color: #fff;
+    color: #007bff;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.type-switch .active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.type-switch button:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Блоки вопросов и ответов */
+.question-block {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc; /* Разделение вопросов */
+}
+
+
+/* Сворачивание вопроса */
+.collapsed-question-title {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.arrow-icon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #007bff;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+/* Ответы */
+.answer-block {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.answer-block input{
+    width: calc(100% - 60px);
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: 1px solid #bbb;
+}
+
+.answer-block .inp1 {
+    border-radius: 0 4px 4px 0;
+}
+
+.answer-block .inp2 {
+    border-radius: 4px;
+}
+
+
+.ans-blk .sclSel1{
+  padding: 10px 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.ans-blk .sclSel2{
+    padding: 10px 5px;
+    font-size: 16px;
+    border: none;
+    border-radius:0 4px 4px 0;
+    width: 50%;
+}
+
+.answer-block .sclSel1{
+    margin-top: 4px;
+    padding: 12px 5px;
+    font-size: 18px;
+    font-family: inherit;
+}
+
+.scale-change{
+    margin-top: 5px;
+}
+
+.radioAns{
+    width: 22px !important;
+    height: 22px !important;
+    transform: scale(1.25);
+    transform-origin: left;
+}
+
+
+/* Кнопка удаления и добавления ответа */
+.add-answer-btn, .delete-question-btn, .add-scale-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.add-answer-btn:hover, .delete-question-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Иконки мусорок */
+.trash-icon {
+    cursor: pointer;
+    color: #007bff;
+    font-size: 20px;
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+
+.trash-icon:hover {
+    color: #0056b3;
+}
+
+
+.scale-color-input{
+    width: 38px;
+    height: 38px;
+    border-radius: 4px 0 0 4px;
+    border: none;
+}
+
+.scale-name-input{
+    width: calc(100% - 40px);
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 0 4px 4px 0;
+    border: none;
+}
+
+.scale-input{
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.question-block {
+    margin: 20px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.collapsed-question-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Стрелка вниз */
+.arrow-icon.right {
+    transform: rotate(90deg); /* Повернуть вправо */
+}
+
+/* Стрелка выделена, когда на нее наводишь */
+.arrow-icon:hover {
+    color: #0056b3;
+}
+
+/* Ответы и инпуты */
+.answer-block {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+.results-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Расстояние между строками */
+    padding: 20px;
+    margin: 0 auto; /* Центрирование */
+}
+
+.inn2{
+    width: 70%;
+    margin-top: 0 !important;
+    padding: 5px !important;
+}
+
+
+.result-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-radius: 6px; /* Легкое скругление углов */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    background-color: #2b2a33;
+}
+
+.result-percent {
+    flex: 1;
+}
+
+.result-block input[type="text"] {
+    flex: 2; /* Поле ввода больше текста */
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px; /* Скругленные углы */
+}
+
+.result-block input[type="text"]:focus {
+    border-color: #4a90e2; /* Цвет рамки при фокусе */
+    box-shadow: 0 0 3px rgba(74, 144, 226, 0.5); /* Подсветка при фокусе */
+}
+
+@media (max-width: 768px) {
+    .results-container {
+        padding: 15px;
+    }
+
+    .result-block {
+        flex-direction: column; /* На маленьких экранах строки в столбец */
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .result-percent {
+        margin-right: 0;
+    }
+
+    .result-block input[type="text"] {
+        flex: unset;
+        width: 100%; /* Поле ввода на всю ширину */
+    }
+}
+
+
+
+#main, .main{
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+}
+
+.testCont h2{
+    text-align: center;
+}
+
+.testCont button{
+    width: 100%;
+}
+
+.ansBtn{
+    padding: 10px;
+    background-color: #2b2a33;
+    margin: 5px 0 5px 0;
+    border-radius: 5px;
+}
+
+.ansBtn:hover{
+    background-color: #242424;
+}
+
+.ansBlk{
+    width: 100%;
+}
+
+.testCont{
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #444;
+}
+
+#root{
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.testItemList {
+    margin-bottom: 8px;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #444;
+  }
+  
+.testItemList h2 {
+    font-size: 1.5rem;
+    margin: 0 0 10px;
+  }
+  
+.testItemList a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+.infTest {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+  
+
+.infTest div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+  
+ 
+.testItemList p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.testItemList:hover {
+    background-color: #2b2a33;
+}
+  
